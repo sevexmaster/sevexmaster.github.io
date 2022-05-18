@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+    <title>Escola</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="theme-color" content="#fff" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" sizes="142x142" href="../content/icon/setup142x142.png" />
+    <link rel="apple-touch-icon" href="../content/icon/ios192x192.jpg" />
+    <link href="../content/css/icon.css" rel="stylesheet" />
+    <link href="../content/css/page.min.css" rel="stylesheet" />
+    <script src="../content/js/jQuery/jQ.js"></script>
+    <script src="../content/js/page.js"></script>
+    <script src="../content/js/chart/chart.js"></script>
+    <script src="../content/js/painel.inicial.js"></script>
+</head>
+<body class="container">
+ <div class="page-loading">
+    <div class="lds-dual-ring"></div>
+ </div>
+    <div class="cont-left">
+        <div class="mobile-menu-info">
+            <div class="mmo-painel">
+                <div href="../views/sistema.html">Pagina Inicial <span class="icon-home"></span></div>
+            </div>
+        </div>
+        <div class="page-logo" href="../views/sistema.html">
+            <div></div>
+        </div>
+        <ul class="lr">
+            <li class="lr focusMenus homepages" href="../views/sistema.html">
+                <div>  
+                    <div>
+                        <span class="icon-home icons"></span>
+                        <span class="page-desc">Home page</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="lr focusMenus">
+                <div>
+                    <div>
+                        <span class="icon-clipboard icons"></span>
+                        <span class="page-desc">Secretaria</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="lr focusMenus">
+                <div>
+                    <div>
+                        <span class="icon-shopping-cart icons"></span>
+                        <span class="page-desc">Home page</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="lr focusMenus">
+                <div>
+                    <div>
+                        <span class="icon-graduation icons"></span>
+                        <span class="page-desc">Area academica</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="lr focusMenus" href="../views/company/index.html">
+                <div>
+                    <div>
+                        <span class="icon-groups icons"></span>
+                        <span class="page-desc">Administração</span>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="page-top">
+        <div>
+            <div>
+                <div class="page-tittle">
+                    <div class="ptc"></div>
+                </div>
+            </div>
+            <div>
+                <div class="page-searsh">
+                    <input type="text" id="globalpesq" placeholder="Pesquisar entidades e documentos" />
+                    <button class="serars"><span class="icon-search"></span></button>
+                    <div class="menu-mobiles">
+                        <button name-event="menu"><span class="icons-menu"></span></button>
+                        <button><span class="icon-search"></span></button>
+                        <button><span class="icon-settings"></span></button>
+                        <button><span class="icon-bell"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="crhg-top">
+            <div>
+                <button><span class="icon-bell"></span></button>
+                <button><span class="icon-settings"></span></button>
+            </div>
+            <div>
+                <div class="user-perfils options-user"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="title-mobile-container">
+        <span>Universidade JED - <b>Painel Inicial</b></span>
+    </div>
+    <div class="cont-center">
+        <div class="dashbord-center lr">
+             <div class="lr">
+                  <div class="p-cards">
+                       <div class="c-imagh focus">
+                            <div class="t-cards">
+                                 <h3>Resumo de vendas</h3>
+                                 <span>Caixa</span>
+                            </div>
+                            <div class="d-cards">
+                                 <div class="dt-cards">0000 0000 0000 0000</div>
+                            </div>
+                            <div class="b-cards">
+                                 <div>Card Head name</div>
+                                 <div>Alberto Manuel</div>
+                                 <div class="d-valor">0 00 kz</div>
+                            </div>
+                       </div>
+                       <div class="c-imagh bb-green">
+                            <div class="tb-cards">
+                                 <h3>Inscritos</h3>
+                                 <p>Total de inscrições</p>
+                            </div>
+                            <div class="db-cards">
+                                 <div class="dtb-cards"><span response-tins></span></div>
+                            </div>
+        
+                            <div class="sl-svg tins">
+                                 <svg id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+                                      <path d="M 0,400 C 0,400 0,200 0,200 C 79.05255925798693,199.43455857093784 158.10511851597386,198.86911714187565 222,195 C 285.89488148402614,191.13088285812435 334.6320851940915,183.95809000343525 401,164 C 467.3679148059085,144.04190999656475 551.3665407076605,111.29852284438337 632,126 C 712.6334592923395,140.70147715561663 789.9017519752663,202.84781861903127 848,210 C 906.0982480247337,217.15218138096873 945.0264513912746,169.3102026794916 1007,161 C 1068.9735486087254,152.6897973205084 1153.9924424596359,183.9113706630024 1230,197 C 1306.0075575403641,210.0886293369976 1373.0037787701822,205.0443146684988 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="var(--color-rgba)" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+                                 </svg>
+                            </div>
+                            <div class="bb-cards">
+                                 <div class="db-valor"><span response-anodt></span> - <span response-tinss></span>%</div>
+                            </div>
+                       </div>
+                       <div class="c-imagh bb-yelow">
+                            <div class="tb-cards">
+                                 <h3>Matriculas</h3>
+                                 <p>Total de Matriculas</p>
+                            </div>
+                            <div class="db-cards">
+                                 <div class="dtb-cards"><span response-tins1></span></div>
+                            </div>
+        
+                            <div class="sl-svg tins1">
+                                 <svg id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+                                      <path d="M 0,400 C 0,400 0,200 0,200 C 79.05255925798693,199.43455857093784 158.10511851597386,198.86911714187565 222,195 C 285.89488148402614,191.13088285812435 334.6320851940915,183.95809000343525 401,164 C 467.3679148059085,144.04190999656475 551.3665407076605,111.29852284438337 632,126 C 712.6334592923395,140.70147715561663 789.9017519752663,202.84781861903127 848,210 C 906.0982480247337,217.15218138096873 945.0264513912746,169.3102026794916 1007,161 C 1068.9735486087254,152.6897973205084 1153.9924424596359,183.9113706630024 1230,197 C 1306.0075575403641,210.0886293369976 1373.0037787701822,205.0443146684988 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="var(--color-rgba)" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+                                 </svg>
+                            </div>
+                            <div class="bb-cards">
+                                 <div class="db-valor"><span response-anodt></span> - <span response-tinss1></span>%</div>
+                            </div>
+                       </div>
+                       <div class="c-imagh bb-blue">
+                            <div class="tb-cards">
+                                 <h3>Bolsas</h3>
+                                 <p>Total de Bolceiros</p>
+                            </div>
+                            <div class="db-cards">
+                                 <div class="dtb-cards"><span response-tins2></span></div>
+                            </div>
+        
+                            <div class="sl-svg tins2">
+                                 <svg id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+                                      <path d="M 0,400 C 0,400 0,200 0,200 C 79.05255925798693,199.43455857093784 158.10511851597386,198.86911714187565 222,195 C 285.89488148402614,191.13088285812435 334.6320851940915,183.95809000343525 401,164 C 467.3679148059085,144.04190999656475 551.3665407076605,111.29852284438337 632,126 C 712.6334592923395,140.70147715561663 789.9017519752663,202.84781861903127 848,210 C 906.0982480247337,217.15218138096873 945.0264513912746,169.3102026794916 1007,161 C 1068.9735486087254,152.6897973205084 1153.9924424596359,183.9113706630024 1230,197 C 1306.0075575403641,210.0886293369976 1373.0037787701822,205.0443146684988 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="var(--color-rgba)" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+                                 </svg>
+                            </div>
+                            <div class="bb-cards">
+                                 <div class="db-valor"><span response-anodt></span> - <span response-tinss2></span>%</div>
+                            </div>
+                       </div>
+                  </div>
+             </div>
+        
+             <div class="lr">
+                  <div class="lr-cards">
+                       <div class="role-cards">
+                            <div>
+                                 <div class="lrp-card">
+                                      <div class="lr">
+                                           <div class="lr-center">
+                                                <div class="lr-flex">
+                                                     <div class="lr-flex-row">
+                                                          <div class="lr-fot">
+                                                               <span class="t1">Estudantes</span>
+                                                          </div>
+                                                     </div>
+                                                     <div class="lr-flex-row des-flex"><span>Gestão de alunos</span></div>
+                                                     <div class="lr-flex-row">
+                                                          <div class="colect-aluno">
+                                                               <div class="image" style="background-image: url(../content/icon/user3.jpg);"></div>
+                                                               <div class="image" style="background-image: url(../content/icon/user2.jpg);"></div>
+                                                               <div class="image" style="background-image: url(../content/icon/user3.jpg);"></div>
+                                                               <div class="image" style="background-image: url(../content/icon/user2.jpg);"></div>
+                                                               <div class="image fnumber">+8</div>
+                                                          </div>
+                                                     </div>
+                                                </div>
+                                           </div>
+                                      </div>
+                                 </div>
+                                 <div class="lrp-card">
+                                      <div class="lr">
+                                           <div class="lr-center">
+                                                <div class="lr-flex">
+                                                     <div class="lr-flex-row">
+                                                          <div class="lr-fot">
+                                                               <span class="t1">Area Comercial</span>
+                                                          </div>
+                                                     </div>
+                                                     <div class="lr-flex-row des-flex"><span>Faturas, recibos etc.</span></div>
+                                                     <div class="lr-flex-row">
+                                                          <button class="btnns">Painel POS<div class="btnn"><span class="icon-shopping-bag icons"></span></div></button>
+                                                     </div>
+                                                </div>
+                                           </div>
+                                      </div>
+                                 </div>
+                                 <div class="lrp-card">
+                                      <div class="lr">
+                                           <div class="lr-center">
+                                                <div class="lr-flex">
+                                                     <div class="lr-flex-row">
+                                                          <div class="lr-fot">
+                                                               <span class="t1">Area Academica</span>
+                                                          </div>
+                                                     </div>
+                                                     <div class="lr-flex-row des-flex"><span>Docentes, notas etc.</span></div>
+                                                     <div class="lr-flex-row">
+                                                          <button class="btnns">Painel Academico</button>
+                                                     </div>
+                                                </div>
+                                           </div>
+                                      </div>
+                                 </div>
+                                 <div class="lrp-card">
+                                      <div class="lr">
+                                           <div class="lr-center">
+                                                <div class="lr-flex">
+                                                     <div class="lr-flex-row">
+                                                          <div class="lr-fot">
+                                                               <span class="t1">Relatorios</span>
+                                                          </div>
+                                                     </div>
+                                                     <div class="lr-flex-row des-flex"><span>Excel XLSX, PDF e SVG</span></div>
+                                                </div>
+                                                <div class="lr-flex-row">
+                                                     <button class="btnns">Gerir Relatorios</button>
+                                                </div>
+                                           </div>
+                                      </div>
+                                 </div>
+                                 
+                                 <div class="lrp-card">
+                                      <div class="lr">
+                                           <div class="lr-center">
+                                                <div class="lr-flex">
+                                                     <div class="lr-flex-row">
+                                                          <div class="lr-fot">
+                                                               <span class="t1">Administração</span>
+                                                          </div>
+                                                     </div>
+                                                     <div class="lr-flex-row des-flex"><span>Excel XLSX, PDF e SVG</span></div>
+                                                </div>
+                                                <div class="lr-flex-row">
+                                                     <button class="btnns">Central Riport</button>
+                                                </div>
+                                           </div>
+                                      </div>
+                                 </div>
+        
+                                 <div class="lrp-card">
+                                      <div class="lr">
+                                           <div class="lr-center">
+                                                <div class="lr-flex">
+                                                     <div class="lr-flex-row">
+                                                          <div class="lr-fot">
+                                                               <span class="t1">Administração</span>
+                                                          </div>
+                                                     </div>
+                                                     <div class="lr-flex-row des-flex"><span>Excel XLSX, PDF e SVG</span></div>
+                                                </div>
+                                                <div class="lr-flex-row">
+                                                     <button class="btnns">Central Riport</button>
+                                                </div>
+                                           </div>
+                                      </div>
+                                 </div>
+        
+                            </div>
+                       </div>
+                  </div>
+             </div>
+        
+             <div class="lr lr-title">
+                  <div> <span>Inscrição & Matricula</span> </div>
+             </div>
+             <div class="lr graficos">
+                  <div class="render-chart-mob">
+                       <div class="linir">
+                            <canvas id="line-chart-1"></canvas>
+                       </div>
+                  </div>
+             </div>
+        
+             <div class="lr historus">
+                  <div class="d-cont">
+                       <div class="rows-mm mm-title">
+                            <div>
+                                 <div> <span>Data</span> <span class="icon-chevron-down"></span> </div>
+                                 <div> <span>ID</span> <span class="icon-chevron-down"></span> </div>
+                                 <div> <span>Status</span> <span class="icon-chevron-down"></span> </div>
+                                 <div> <span>Designação</span> <span class="icon-chevron-down"></span> </div>
+                            </div>
+                       </div>
+                       <div class="center-r-mm"></div>
+                  </div>
+             </div>
+        
+        </div>
+        
+        
+        <style>
+             .page-tittle{
+                  background:transparent;
+             }
+             .cont-left > ul > li.focus > div:before,
+             .cont-left > ul > li.focus > div:after,
+             .cont-left .focus:before{
+                 background:var(--color-3);
+             }
+        </style>
+        <script>
+           /** carregar blibliotecas para Excel e PDF */
+               (page.painel || {inicial:()=>{}}).inicial();
+        </script>
+    </div>
+ <div class="cont-right">
+     <div class="crhg-top">
+         <div>
+             <button><span class="icon-bell"></span></button>
+             <button><span class="icon-settings"></span></button>
+         </div>
+         <div>
+             <div class="user-perfils options-user"></div>
+         </div>
+     </div>
+     <div class="center-lets-pages"></div>
+ </div>
+ <script>
+    var secretaria = [
+         { icon:'icon-shopping-cart', label:'Secretaria Geral', title:true },
+         { u: "secretary/student/write-student", label:'Escrever alunos' }
+     ];
+    var academico  = [
+         {  label:'Serviços academicos', title:true }
+     ];
+     var company =  [
+         { icon:'icon-shopping-cart', label:'Administração', title:true },
+         { icon:'icon-shopping-cart', u: "../company/user.html", label:'Gestão de Utilizadores' },
+         { icon:'icon-shopping-cart', u: "../company/curso.html", label:'Gestão de cursos' },
+         { icon:'icon-shopping-cart', u: "../company/disciplina.html", label:'Disciplina' },
+         { icon:'icon-shopping-cart', u: "../company/docente.html", label:'Docente' },
+         { icon:'icon-shopping-cart', u: "../company/empresa.html", label:'Empresa' },
+         { icon:'icon-shopping-cart', u: "../company/filial.html", label:'Filial' },
+         { icon:'icon-shopping-cart', u: "../company/departamento.html", label:'Departamento' },
+         { icon:'icon-shopping-cart', u: "../company/turmas.html", label:'Turmas' },
+         { icon:'icon-shopping-cart', u: "../company/perfil.html", label:'Perfil' },
+         { icon:'icon-shopping-cart', u: "../company/permissoes.html", label:'Permissões' }
+     ];
+
+    page.autocomplite("#globalpesq", {
+        css: {
+            position:"fixed",
+            width: document.querySelector(".page-searsh").offsetWidth+"px"
+        },
+        post: { 
+            url:"sys/rest/getFilterCurso", 
+            data: {},
+            filterGoogle:true
+        },
+        dataValueField: "id",
+        dataTextField: "nome"
+    } );
+
+    /** ajustar a largura da div */
+    document.querySelector(".page-searsh .page-input > input")
+    .addEventListener("click", function(){
+        page.data('#globalpesq').init.arguments.css.width = document.querySelector(".page-searsh").offsetWidth+"px";
+    });
+    
+     document.querySelectorAll(".focusMenus").forEach((ele, index) =>{
+        switch(index){
+            case 1:
+                ele.dataLink = secretaria;
+                break;
+            case 3:
+                ele.dataLink = academico;
+                break;
+            case 4:
+                ele.dataLink = company;
+                break;
+        }
+	 });
+    document.body.classList.add("set-opacity");
+    document.querySelectorAll(".user-perfils").forEach( el =>{
+        if( page.user().fotografia )
+            el.style.backgroundImage = "url("+page.user().fotografia+")";
+    } );
+ </script>
+</body>
+</html>

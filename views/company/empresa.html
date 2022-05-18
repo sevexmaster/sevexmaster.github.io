@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+    <title>Escola</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="theme-color" content="#fff" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" sizes="142x142" href="../../content/icon/setup142x142.png" />
+    <link rel="apple-touch-icon" href="../../content/icon/ios192x192.jpg" />
+    <link href="../../content/css/icon.css" rel="stylesheet" />
+    <link href="../../content/css/page.min.css" rel="stylesheet" />
+    <script src="../../content/js/jQuery/jQ.js"></script>
+    <script src="../../content/js/page.js"></script>
+    <script src="../../content/js/chart/chart.js"></script>
+    <script src="../../content/js/PDF/jspdf.min.js"></script>
+    <script src="../../content/js/PDF/jspdf.plugin.autotable.min.js"></script>
+    <script src="../../content/js/webCam/webCam.js"></script>
+    <script src="../../content/js/company/empresa/empresa.js"></script>
+</head>
+<body class="container">
+    <div class="page-loading">
+       <div class="lds-dual-ring"></div>
+    </div>
+       <div class="cont-left">
+           <div class="mobile-menu-info">
+               <div class="mmo-painel">
+                   <div href="../../views/sistema.html">Pagina Inicial <span class="icon-home"></span></div>
+               </div>
+           </div>
+           <div class="page-logo" href="../../views/sistema.html">
+               <div></div>
+           </div>
+           <ul class="lr">
+               <li class="lr focusMenus homepages" href="../../views/sistema.html">
+                   <div>  
+                       <div>
+                           <span class="icon-home icons"></span>
+                           <span class="page-desc">Home page</span>
+                       </div>
+                   </div>
+               </li>
+   
+               <li class="lr focusMenus">
+                   <div>
+                       <div>
+                           <span class="icon-clipboard icons"></span>
+                           <span class="page-desc">Secretaria</span>
+                       </div>
+                   </div>
+               </li>
+   
+               <li class="lr focusMenus">
+                   <div>
+                       <div>
+                           <span class="icon-shopping-cart icons"></span>
+                           <span class="page-desc">Home page</span>
+                       </div>
+                   </div>
+               </li>
+   
+               <li class="lr focusMenus">
+                   <div>
+                       <div>
+                           <span class="icon-graduation icons"></span>
+                           <span class="page-desc">Area academica</span>
+                       </div>
+                   </div>
+               </li>
+   
+               <li class="lr focusMenus" href="../../views/company/index.html">
+                   <div>
+                       <div>
+                           <span class="icon-groups icons"></span>
+                           <span class="page-desc">Administração</span>
+                       </div>
+                   </div>
+               </li>
+               
+           </ul>
+       </div>
+       <div class="page-top">
+           <div>
+               <div>
+                   <div class="page-tittle">
+                       <div class="ptc"></div>
+                   </div>
+               </div>
+               <div>
+                   <div class="page-searsh">
+                       <input type="text" id="globalpesq" placeholder="Pesquisar entidades e documentos" />
+                       <button class="serars"><span class="icon-search"></span></button>
+                       <div class="menu-mobiles">
+                           <button name-event="menu"><span class="icons-menu"></span></button>
+                           <button><span class="icon-search"></span></button>
+                           <button><span class="icon-settings"></span></button>
+                           <button><span class="icon-bell"></span></button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+   
+           <div class="crhg-top">
+               <div>
+                   <button><span class="icon-bell"></span></button>
+                   <button><span class="icon-settings"></span></button>
+               </div>
+               <div>
+                   <div class="user-perfils options-user"></div>
+               </div>
+           </div>
+   
+       </div>
+       <div class="title-mobile-container">
+           <span>Universidade JED - <b>Painel Inicial</b></span>
+       </div>
+       <div class="cont-center">
+        <div class="center-cont">
+            <div class="list-lateral">
+                <div class="search-paines">
+                    <div class="page-searsh" id="filterAnuno">
+                        <input type="text" placeholder="Search Utilizadores" />
+                        <button><span class="icon-search"></span></button>
+                    </div>
+                </div>
+                <div class="result-search-scroll">
+                    <div class="result-search" scroll-body></div>
+                </div>
+            </div>
+            <div class="form">
+
+                <div class="administracao-painel">
+                    <div class="lr"><span class="title-lr">Registrar utilizadores</span></div>
+                    <div class="lr">
+                        <div class="formularios" id="empresa"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    <button class="filter-left"><button>
+        </div>
+        
+        <div class="cont-right">
+            <div class="crhg-top">
+                <div>
+                    <button><span class="icon-bell"></span></button>
+                    <button><span class="icon-settings"></span></button>
+                </div>
+                <div>
+                    <div class="user-perfils options-user"></div>
+                </div>
+            </div>
+            <div class="center-lets-pages"></div>
+        </div>
+ <script>
+    var secretaria = [
+         { icon:'icon-shopping-cart', label:'Secretaria Geral', title:true },
+         { u: "secretary/student/write-student", label:'Escrever alunos' }
+     ];
+    var academico  = [
+         {  label:'Serviços academicos', title:true }
+     ];
+     var company =  [
+         { icon:'icon-shopping-cart', label:'Administração', title:true },
+         { icon:'icon-shopping-cart', u: "../company/user.html", label:'Gestão de Utilizadores' },
+         { icon:'icon-shopping-cart', u: "../company/curso.html", label:'Gestão de cursos' },
+         { icon:'icon-shopping-cart', u: "../company/disciplina.html", label:'Disciplina' },
+         { icon:'icon-shopping-cart', u: "../company/docente.html", label:'Docente' },
+         { icon:'icon-shopping-cart', u: "../company/empresa.html", label:'Empresa' },
+         { icon:'icon-shopping-cart', u: "../company/filial.html", label:'Filial' },
+         { icon:'icon-shopping-cart', u: "../company/departamento.html", label:'Departamento' },
+         { icon:'icon-shopping-cart', u: "../company/turmas.html", label:'Turmas' },
+         { icon:'icon-shopping-cart', u: "../company/perfil.html", label:'Perfil' },
+         { icon:'icon-shopping-cart', u: "../company/permissoes.html", label:'Permissões' }
+     ];
+
+    page.autocomplite("#globalpesq", {
+        css: {
+            position:"fixed",
+            width: document.querySelector(".page-searsh").offsetWidth+"px"
+        },
+        post: { 
+            url:"sys/rest/getFilterCurso", 
+            data: {},
+            filterGoogle:true
+        },
+        dataValueField: "id",
+        dataTextField: "nome"
+    } );
+
+    /** ajustar a largura da div */
+    document.querySelector(".page-searsh .page-input > input")
+    .addEventListener("click", function(){
+        page.data('#globalpesq').init.arguments.css.width = document.querySelector(".page-searsh").offsetWidth+"px";
+    });
+    
+     document.querySelectorAll(".focusMenus").forEach((ele, index) =>{
+        switch(index){
+            case 1:
+                ele.dataLink = secretaria;
+                break;
+            case 3:
+                ele.dataLink = academico;
+                break;
+            case 4:
+                ele.dataLink = company;
+                break;
+        }
+	 });
+    document.body.classList.add("set-opacity");
+    document.querySelectorAll(".user-perfils").forEach( el =>{
+        if( page.user().fotografia )
+            el.style.backgroundImage = "url("+page.user().fotografia+")";
+    } );
+    page.painel.empresa.empresa();
+ </script>
+</body>
+</html>
