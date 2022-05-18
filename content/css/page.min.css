@@ -517,6 +517,8 @@ form button,
 button.dropdown,
 .row-lines,
 .row-lines > span,
+.linej56,
+.linej56 > div,
 .center-riports table span{
     text-overflow: ellipsis;
     overflow: hidden;
@@ -1159,7 +1161,7 @@ button.dropdown,
 .drop-curso .page-droplist input {
     clear: both;
     float: left;
-    background: var(--color-0-secundary);
+    background: var(--color-3);
     height: 40px;
     width: 100%;
     padding: 0 15px;
@@ -2698,11 +2700,13 @@ iframe.ifr {
 }
 
 
-.editor-img > label{
+.editor-img > label {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
+    z-index: 4;
+    border: 2px dashed #ccc;
     left: 0;
 }
 
@@ -2712,7 +2716,6 @@ iframe.ifr {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.50);
     z-index: 3;
     opacity: 0;
     cursor: pointer;
@@ -2939,6 +2942,35 @@ div#logaut {
     justify-content: right;
     align-items: center;
 }
+
+/** estifizar formularios */
+#curso [class^="filds-"], 
+#disciplina [class^="filds-"], 
+#docente [class^="filds-"],
+#empresa [class^="filds-"],
+#filial [class^="filds-"],
+#departamento [class^="filds-"],
+#turmas [class^="filds-"],
+#perfil [class^="filds-"],
+#permissoes [class^="filds-"]{
+    width: calc(50% - 20px);
+    margin-right: 10px;
+}
+
+#filial .filds-nome{
+    width: calc(100% - 20px);
+}
+
+.filds-loginName {
+    width: calc(40% - 40px);
+    margin-right: 10px;
+}
+
+.linej56 {
+    width: 190px;
+}
+
+/** fim estifizar formularios */
 
   @keyframes pathAnim-0{
     0%{

@@ -34,58 +34,6 @@
                 '<h3>Administração</h3>'
             ].join("");
 
-       
-
-            var response = [{
-                "nome": "INFORMATICA",
-                "descricao": "string",
-                "duracao": "string",
-                "codigo": "string",
-                "nivel": 1,
-                "dapartamentoId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
-              },
-              {
-                "nome": "GESTÂO IMPRESARIAL",
-                "descricao": "string",
-                "duracao": "string",
-                "codigo": "string",
-                "nivel": 1,
-                "dapartamentoId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
-              }];
-
-            document.querySelector(".result-search")
-                .innerHTML = "";
-
-            response.find(function (ar) {
-                var div = document.createElement("div");
-                div.classList.add("list");
-                div.data = ar;
-                div.innerHTML = [
-                    '<div>', ar.nome, '</div>'
-                ].join("");
-
-                page.contextmenu(div, {
-                    options: [
-                        {
-                            label: "Configuração",
-                            select: function () {
-                                console.log(this);
-                            }
-                        },
-                        {
-                            label: "Profile",
-                            select: function () {
-                                console.log(this);
-                            }
-                        }
-                    ]
-                });
-                document.querySelector(".result-search")
-                    .appendChild(div);
-                clickHancor(document.querySelector(".result-search"));
-            });
-
-
             /** sefor um aplicativo mobile */
             document.querySelector(".filter-left")
                 .addEventListener("click", function () {
@@ -121,11 +69,11 @@
                 controller: turmas.method,
                 button: [{ label: "Salvar", submit: true, class: "btnns extlink" }],
                 filds: [
-                    { name: "anoLectivoId", id: "anoLectivoId", type: "text", autocomplete:"off", label: "anoLectivoId", "mensage-worning": "" },
-                    { name: "cursoId", id: "cursoId", type: "text", autocomplete:"off", label: "cursoId", "mensage-worning": "" },
-                    { name: "sala", id: "sala", type: "text", autocomplete:"off", label: "sala", "mensage-worning": "" },
-                    { name: "turno", id: "turno", type: "text", autocomplete:"off", label: "turno", "mensage-worning": "" },
-                    { name: "codigo", id: "codigo", type: "text", autocomplete:"off", label: "codigo", "mensage-worning": "" }
+                    { name: "anoLectivoId", id: "anoLectivoId", type: "text", autocomplete:"off", label: "Ano", "mensage-worning": "" },
+                    { name: "cursoId", id: "cursoId", type: "text", autocomplete:"off", label: "Curso", "mensage-worning": "" },
+                    { name: "sala", id: "sala", type: "text", autocomplete:"off", label: "Sala", "mensage-worning": "" },
+                    { name: "turno", id: "turno", type: "text", autocomplete:"off", label: "Turno", "mensage-worning": "" },
+                    { name: "codigo", id: "codigo", type: "text", autocomplete:"off", label: "Codigo", "mensage-worning": "" }
                 ]
             }).then(resonse => {
                 return reload();

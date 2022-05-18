@@ -34,58 +34,6 @@
                 '<h3>Administração</h3>'
             ].join("");
 
-       
-
-            var response = [{
-                "nome": "INFORMATICA",
-                "descricao": "string",
-                "duracao": "string",
-                "codigo": "string",
-                "nivel": 1,
-                "dapartamentoId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
-              },
-              {
-                "nome": "GESTÂO IMPRESARIAL",
-                "descricao": "string",
-                "duracao": "string",
-                "codigo": "string",
-                "nivel": 1,
-                "dapartamentoId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
-              }];
-
-            document.querySelector(".result-search")
-                .innerHTML = "";
-
-            response.find(function (ar) {
-                var div = document.createElement("div");
-                div.classList.add("list");
-                div.data = ar;
-                div.innerHTML = [
-                    '<div>', ar.nome, '</div>'
-                ].join("");
-
-                page.contextmenu(div, {
-                    options: [
-                        {
-                            label: "Configuração",
-                            select: function () {
-                                console.log(this);
-                            }
-                        },
-                        {
-                            label: "Profile",
-                            select: function () {
-                                console.log(this);
-                            }
-                        }
-                    ]
-                });
-                document.querySelector(".result-search")
-                    .appendChild(div);
-                clickHancor(document.querySelector(".result-search"));
-            });
-
-
             /** sefor um aplicativo mobile */
             document.querySelector(".filter-left")
                 .addEventListener("click", function () {
@@ -121,9 +69,9 @@
                 controller: perfil.method,
                 button: [{ label: "Salvar", submit: true, class: "btnns extlink" }],
                 filds: [
-                    { name: "nome", id: "nome", type: "text", autocomplete:"off", label: "Nome Completo", "mensage-worning": "" },
+                    { name: "nome", id: "nome", type: "text", autocomplete:"off", label: "Nome", "mensage-worning": "" },
                     { name: "descricao", id: "descricao", type: "text", autocomplete:"off", label: "Descrição", "mensage-worning": "" },
-                    { name: "filialId", id: "filialId", type: "text", autocomplete:"off", label: "filialId", "mensage-worning": "" }
+                    { name: "filialId", id: "filialId", type: "text", autocomplete:"off", label: "Filial", "mensage-worning": "" }
                 ]
             }).then(resonse => {
                 return reload();
