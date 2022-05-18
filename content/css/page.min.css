@@ -695,7 +695,7 @@ button.dropdown,
     top: 0;
     width: calc(100% - 400px);
     height: 80px;
-    z-index: 2;
+    z-index: 5;
     background: var(--color-3);
 }
 
@@ -1148,6 +1148,7 @@ button.dropdown,
     border-radius: 5px;
     resize:none;
     outline: none;
+    background: var(--color-3);
 }
 
 .form form > div > * {

@@ -2506,6 +2506,7 @@ function dataChart() {
 			obj.classList.add("editor-img");
 			obj.addEventListener("click", function () {
 				page.popup({
+					type: "warning",
 					title: 'Editar foto',
 					html: '<input type="file" name="fileupload" style="display:none;" id="fileupload" /><p>The setCaretPosition function works just fine. Your addActionHandler function, however, does not. But even</p>',
 					button: '<button class="bak-green" id="WebCam">WebCam</button> <button class="bak-green" id="Carregar">Carregar</button>',
