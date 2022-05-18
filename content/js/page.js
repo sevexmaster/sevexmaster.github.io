@@ -2406,7 +2406,7 @@ function dataChart() {
 	window.page = {
 		painel: {},
 		user: function(){
-			return JSON.parse( '{"id":"51cd6de7-cc25-40f6-b2ba-f544af72da02","nome":"Mauro","loginName":"mouro","email":"mauro@essca.ao","telefone":"(+244) 998 484 848","fotografia":"","empresa":null,"nivelId":4}}}' );
+			return JSON.parse( '{"id":"51cd6de7-cc25-40f6-b2ba-f544af72da02","nome":"Mauro","loginName":"mouro","email":"mauro@essca.ao","telefone":"(+244) 998 484 848","fotografia":"","empresa":null,"nivelId":4}' );
 		},
 		Chart: new Array(),
 		/** alterar os campos do modelo para minusculo */
